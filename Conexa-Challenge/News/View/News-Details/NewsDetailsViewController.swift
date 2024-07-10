@@ -9,6 +9,12 @@ import UIKit
 
 class NewsDetailsViewController: UIViewController {
 
+
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var publishedAtLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
