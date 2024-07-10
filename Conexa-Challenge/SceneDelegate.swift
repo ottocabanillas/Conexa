@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Conexa-Challenge
 //
-//  Created by Oscar A. Rafael Cabanillas on 08/07/2024.
+//  Created by Oscar A. Rafael Cabanillas on 09/07/2024.
 //
 
 import UIKit

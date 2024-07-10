@@ -7,232 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6A2250D2C3C827100E5D99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2250C2C3C827100E5D99F /* AppDelegate.swift */; };
-		C6A2250F2C3C827100E5D99F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2250E2C3C827100E5D99F /* SceneDelegate.swift */; };
-		C6A225112C3C827100E5D99F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225102C3C827100E5D99F /* ViewController.swift */; };
-		C6A225142C3C827100E5D99F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C6A225132C3C827100E5D99F /* Base */; };
-		C6A225162C3C827100E5D99F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A225152C3C827100E5D99F /* Assets.xcassets */; };
-		C6A225192C3C827100E5D99F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C6A225182C3C827100E5D99F /* Base */; };
-		C6A225322C3C8A1A00E5D99F /* Conexa_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225312C3C8A1A00E5D99F /* Conexa_ChallengeTests.swift */; };
-		C6A2253A2C3C8BFF00E5D99F /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A225392C3C8BFF00E5D99F /* NewsDetailViewController.xib */; };
-		C6A2253B2C3C8BFF00E5D99F /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225382C3C8BFF00E5D99F /* NewsDetailViewController.swift */; };
-		C6A2253E2C3C8C1E00E5D99F /* NewsSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A2253D2C3C8C1E00E5D99F /* NewsSearchViewController.xib */; };
-		C6A2253F2C3C8C1E00E5D99F /* NewsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2253C2C3C8C1E00E5D99F /* NewsSearchViewController.swift */; };
-		C6A225422C3C8C4000E5D99F /* MapsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A225412C3C8C4000E5D99F /* MapsDetailViewController.xib */; };
-		C6A225432C3C8C4000E5D99F /* MapsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225402C3C8C4000E5D99F /* MapsDetailViewController.swift */; };
-		C6A225462C3C8C6C00E5D99F /* MapsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A225452C3C8C6C00E5D99F /* MapsListViewController.xib */; };
-		C6A225472C3C8C6C00E5D99F /* MapsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225442C3C8C6C00E5D99F /* MapsListViewController.swift */; };
-		C6A225492C3C8C9800E5D99F /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A225482C3C8C9800E5D99F /* UserEntity.swift */; };
-		C6A2254C2C3C90CF00E5D99F /* NewsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2254B2C3C90CF00E5D99F /* NewsEntity.swift */; };
+		B5391C6799759F2925D704B2 /* Pods_Conexa_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */; };
+		C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */; };
+		C6ED1C5A2C3E1B5A00510BFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */; };
+		C6ED1C5C2C3E1B5A00510BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C5B2C3E1B5A00510BFB /* ViewController.swift */; };
+		C6ED1C5F2C3E1B5A00510BFB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C6ED1C5E2C3E1B5A00510BFB /* Base */; };
+		C6ED1C612C3E1B5A00510BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ED1C602C3E1B5A00510BFB /* Assets.xcassets */; };
+		C6ED1C642C3E1B5A00510BFB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C6ED1C632C3E1B5A00510BFB /* Base */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C6A225332C3C8A1A00E5D99F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C6A225012C3C827100E5D99F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C6A225082C3C827100E5D99F;
-			remoteInfo = "Conexa-Challenge";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		C6A225092C3C827100E5D99F /* Conexa-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conexa-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6A2250C2C3C827100E5D99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6A2250E2C3C827100E5D99F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6A225102C3C827100E5D99F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6A225132C3C827100E5D99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C6A225152C3C827100E5D99F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C6A225182C3C827100E5D99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C6A2251A2C3C827100E5D99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6A2252F2C3C8A1A00E5D99F /* Conexa-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conexa-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6A225312C3C8A1A00E5D99F /* Conexa_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conexa_ChallengeTests.swift; sourceTree = "<group>"; };
-		C6A225382C3C8BFF00E5D99F /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
-		C6A225392C3C8BFF00E5D99F /* NewsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailViewController.xib; sourceTree = "<group>"; };
-		C6A2253C2C3C8C1E00E5D99F /* NewsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchViewController.swift; sourceTree = "<group>"; };
-		C6A2253D2C3C8C1E00E5D99F /* NewsSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSearchViewController.xib; sourceTree = "<group>"; };
-		C6A225402C3C8C4000E5D99F /* MapsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDetailViewController.swift; sourceTree = "<group>"; };
-		C6A225412C3C8C4000E5D99F /* MapsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsDetailViewController.xib; sourceTree = "<group>"; };
-		C6A225442C3C8C6C00E5D99F /* MapsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsListViewController.swift; sourceTree = "<group>"; };
-		C6A225452C3C8C6C00E5D99F /* MapsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsListViewController.xib; sourceTree = "<group>"; };
-		C6A225482C3C8C9800E5D99F /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
-		C6A2254B2C3C90CF00E5D99F /* NewsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEntity.swift; sourceTree = "<group>"; };
+		4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conexa_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A444001B973779754D31374A /* Pods-Conexa-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conexa-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B95ECE7762ACD0FED1DBD986 /* Pods-Conexa-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conexa-Challenge.release.xcconfig"; path = "Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		C6ED1C542C3E1B5A00510BFB /* Conexa-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conexa-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6ED1C5B2C3E1B5A00510BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6ED1C5E2C3E1B5A00510BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6ED1C602C3E1B5A00510BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6ED1C632C3E1B5A00510BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6ED1C652C3E1B5A00510BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C6A225062C3C827100E5D99F /* Frameworks */ = {
+		C6ED1C512C3E1B5A00510BFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6A2252C2C3C8A1A00E5D99F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B5391C6799759F2925D704B2 /* Pods_Conexa_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C6A225002C3C827100E5D99F = {
+		1E7D5FF968E4132640164524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6A2250B2C3C827100E5D99F /* Conexa-Challenge */,
-				C6A225302C3C8A1A00E5D99F /* Conexa-ChallengeTests */,
-				C6A2250A2C3C827100E5D99F /* Products */,
+				4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D2F8FB7B1697C3051C48AE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A444001B973779754D31374A /* Pods-Conexa-Challenge.debug.xcconfig */,
+				B95ECE7762ACD0FED1DBD986 /* Pods-Conexa-Challenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6ED1C4B2C3E1B5A00510BFB = {
+			isa = PBXGroup;
+			children = (
+				C6ED1C562C3E1B5A00510BFB /* Conexa-Challenge */,
+				C6ED1C552C3E1B5A00510BFB /* Products */,
+				4D2F8FB7B1697C3051C48AE2 /* Pods */,
+				1E7D5FF968E4132640164524 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C6A2250A2C3C827100E5D99F /* Products */ = {
+		C6ED1C552C3E1B5A00510BFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6A225092C3C827100E5D99F /* Conexa-Challenge.app */,
-				C6A2252F2C3C8A1A00E5D99F /* Conexa-ChallengeTests.xctest */,
+				C6ED1C542C3E1B5A00510BFB /* Conexa-Challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6A2250B2C3C827100E5D99F /* Conexa-Challenge */ = {
+		C6ED1C562C3E1B5A00510BFB /* Conexa-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				C6A2254A2C3C8DF100E5D99F /* NetworkLayer */,
-				C6A225222C3C896500E5D99F /* News */,
-				C6A225202C3C892F00E5D99F /* Home */,
-				C6A225232C3C897600E5D99F /* Maps */,
-				C6A2250C2C3C827100E5D99F /* AppDelegate.swift */,
-				C6A2250E2C3C827100E5D99F /* SceneDelegate.swift */,
-				C6A225102C3C827100E5D99F /* ViewController.swift */,
-				C6A225122C3C827100E5D99F /* Main.storyboard */,
-				C6A225152C3C827100E5D99F /* Assets.xcassets */,
-				C6A225172C3C827100E5D99F /* LaunchScreen.storyboard */,
-				C6A2251A2C3C827100E5D99F /* Info.plist */,
+				C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */,
+				C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */,
+				C6ED1C5B2C3E1B5A00510BFB /* ViewController.swift */,
+				C6ED1C5D2C3E1B5A00510BFB /* Main.storyboard */,
+				C6ED1C602C3E1B5A00510BFB /* Assets.xcassets */,
+				C6ED1C622C3E1B5A00510BFB /* LaunchScreen.storyboard */,
+				C6ED1C652C3E1B5A00510BFB /* Info.plist */,
 			);
 			path = "Conexa-Challenge";
-			sourceTree = "<group>";
-		};
-		C6A225202C3C892F00E5D99F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		C6A225212C3C893A00E5D99F /* NewsSearch */ = {
-			isa = PBXGroup;
-			children = (
-				C6A2253C2C3C8C1E00E5D99F /* NewsSearchViewController.swift */,
-				C6A2253D2C3C8C1E00E5D99F /* NewsSearchViewController.xib */,
-			);
-			path = NewsSearch;
-			sourceTree = "<group>";
-		};
-		C6A225222C3C896500E5D99F /* News */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225262C3C89A300E5D99F /* View */,
-				C6A225252C3C899900E5D99F /* Model */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		C6A225232C3C897600E5D99F /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				C6A2252A2C3C89E400E5D99F /* View */,
-				C6A225242C3C898D00E5D99F /* Model */,
-			);
-			path = Maps;
-			sourceTree = "<group>";
-		};
-		C6A225242C3C898D00E5D99F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225482C3C8C9800E5D99F /* UserEntity.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6A225252C3C899900E5D99F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C6A2254B2C3C90CF00E5D99F /* NewsEntity.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C6A225262C3C89A300E5D99F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225272C3C89AC00E5D99F /* NewsDetail */,
-				C6A225212C3C893A00E5D99F /* NewsSearch */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C6A225272C3C89AC00E5D99F /* NewsDetail */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225382C3C8BFF00E5D99F /* NewsDetailViewController.swift */,
-				C6A225392C3C8BFF00E5D99F /* NewsDetailViewController.xib */,
-			);
-			path = NewsDetail;
-			sourceTree = "<group>";
-		};
-		C6A225282C3C89CA00E5D99F /* MapsDetail */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225402C3C8C4000E5D99F /* MapsDetailViewController.swift */,
-				C6A225412C3C8C4000E5D99F /* MapsDetailViewController.xib */,
-			);
-			path = MapsDetail;
-			sourceTree = "<group>";
-		};
-		C6A225292C3C89D700E5D99F /* MapsList */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225442C3C8C6C00E5D99F /* MapsListViewController.swift */,
-				C6A225452C3C8C6C00E5D99F /* MapsListViewController.xib */,
-			);
-			path = MapsList;
-			sourceTree = "<group>";
-		};
-		C6A2252A2C3C89E400E5D99F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225282C3C89CA00E5D99F /* MapsDetail */,
-				C6A225292C3C89D700E5D99F /* MapsList */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C6A225302C3C8A1A00E5D99F /* Conexa-ChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				C6A225312C3C8A1A00E5D99F /* Conexa_ChallengeTests.swift */,
-			);
-			path = "Conexa-ChallengeTests";
-			sourceTree = "<group>";
-		};
-		C6A2254A2C3C8DF100E5D99F /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6A225082C3C827100E5D99F /* Conexa-Challenge */ = {
+		C6ED1C532C3E1B5A00510BFB /* Conexa-Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6A2251D2C3C827100E5D99F /* Build configuration list for PBXNativeTarget "Conexa-Challenge" */;
+			buildConfigurationList = C6ED1C682C3E1B5A00510BFB /* Build configuration list for PBXNativeTarget "Conexa-Challenge" */;
 			buildPhases = (
-				C6A225052C3C827100E5D99F /* Sources */,
-				C6A225062C3C827100E5D99F /* Frameworks */,
-				C6A225072C3C827100E5D99F /* Resources */,
+				B3447E935A0AADFA6A200C5B /* [CP] Check Pods Manifest.lock */,
+				C6ED1C502C3E1B5A00510BFB /* Sources */,
+				C6ED1C512C3E1B5A00510BFB /* Frameworks */,
+				C6ED1C522C3E1B5A00510BFB /* Resources */,
+				8BEA24F7B8F1D33EA46BFF52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,47 +110,25 @@
 			);
 			name = "Conexa-Challenge";
 			productName = "Conexa-Challenge";
-			productReference = C6A225092C3C827100E5D99F /* Conexa-Challenge.app */;
+			productReference = C6ED1C542C3E1B5A00510BFB /* Conexa-Challenge.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C6A2252E2C3C8A1A00E5D99F /* Conexa-ChallengeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6A225352C3C8A1A00E5D99F /* Build configuration list for PBXNativeTarget "Conexa-ChallengeTests" */;
-			buildPhases = (
-				C6A2252B2C3C8A1A00E5D99F /* Sources */,
-				C6A2252C2C3C8A1A00E5D99F /* Frameworks */,
-				C6A2252D2C3C8A1A00E5D99F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C6A225342C3C8A1A00E5D99F /* PBXTargetDependency */,
-			);
-			name = "Conexa-ChallengeTests";
-			productName = "Conexa-ChallengeTests";
-			productReference = C6A2252F2C3C8A1A00E5D99F /* Conexa-ChallengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C6A225012C3C827100E5D99F /* Project object */ = {
+		C6ED1C4C2C3E1B5A00510BFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					C6A225082C3C827100E5D99F = {
+					C6ED1C532C3E1B5A00510BFB = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					C6A2252E2C3C8A1A00E5D99F = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = C6A225082C3C827100E5D99F;
 					};
 				};
 			};
-			buildConfigurationList = C6A225042C3C827100E5D99F /* Build configuration list for PBXProject "Conexa-Challenge" */;
+			buildConfigurationList = C6ED1C4F2C3E1B5A00510BFB /* Build configuration list for PBXProject "Conexa-Challenge" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,89 +136,97 @@
 				en,
 				Base,
 			);
-			mainGroup = C6A225002C3C827100E5D99F;
-			productRefGroup = C6A2250A2C3C827100E5D99F /* Products */;
+			mainGroup = C6ED1C4B2C3E1B5A00510BFB;
+			productRefGroup = C6ED1C552C3E1B5A00510BFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6A225082C3C827100E5D99F /* Conexa-Challenge */,
-				C6A2252E2C3C8A1A00E5D99F /* Conexa-ChallengeTests */,
+				C6ED1C532C3E1B5A00510BFB /* Conexa-Challenge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C6A225072C3C827100E5D99F /* Resources */ = {
+		C6ED1C522C3E1B5A00510BFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A225422C3C8C4000E5D99F /* MapsDetailViewController.xib in Resources */,
-				C6A2253E2C3C8C1E00E5D99F /* NewsSearchViewController.xib in Resources */,
-				C6A2253A2C3C8BFF00E5D99F /* NewsDetailViewController.xib in Resources */,
-				C6A225462C3C8C6C00E5D99F /* MapsListViewController.xib in Resources */,
-				C6A225162C3C827100E5D99F /* Assets.xcassets in Resources */,
-				C6A225192C3C827100E5D99F /* Base in Resources */,
-				C6A225142C3C827100E5D99F /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6A2252D2C3C8A1A00E5D99F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C6ED1C612C3E1B5A00510BFB /* Assets.xcassets in Resources */,
+				C6ED1C642C3E1B5A00510BFB /* Base in Resources */,
+				C6ED1C5F2C3E1B5A00510BFB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		C6A225052C3C827100E5D99F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		8BEA24F7B8F1D33EA46BFF52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A2253B2C3C8BFF00E5D99F /* NewsDetailViewController.swift in Sources */,
-				C6A225112C3C827100E5D99F /* ViewController.swift in Sources */,
-				C6A225432C3C8C4000E5D99F /* MapsDetailViewController.swift in Sources */,
-				C6A2253F2C3C8C1E00E5D99F /* NewsSearchViewController.swift in Sources */,
-				C6A2254C2C3C90CF00E5D99F /* NewsEntity.swift in Sources */,
-				C6A225472C3C8C6C00E5D99F /* MapsListViewController.swift in Sources */,
-				C6A2250D2C3C827100E5D99F /* AppDelegate.swift in Sources */,
-				C6A2250F2C3C827100E5D99F /* SceneDelegate.swift in Sources */,
-				C6A225492C3C8C9800E5D99F /* UserEntity.swift in Sources */,
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		C6A2252B2C3C8A1A00E5D99F /* Sources */ = {
+		B3447E935A0AADFA6A200C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conexa-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6ED1C502C3E1B5A00510BFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A225322C3C8A1A00E5D99F /* Conexa_ChallengeTests.swift in Sources */,
+				C6ED1C5C2C3E1B5A00510BFB /* ViewController.swift in Sources */,
+				C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */,
+				C6ED1C5A2C3E1B5A00510BFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C6A225342C3C8A1A00E5D99F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C6A225082C3C827100E5D99F /* Conexa-Challenge */;
-			targetProxy = C6A225332C3C8A1A00E5D99F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		C6A225122C3C827100E5D99F /* Main.storyboard */ = {
+		C6ED1C5D2C3E1B5A00510BFB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C6A225132C3C827100E5D99F /* Base */,
+				C6ED1C5E2C3E1B5A00510BFB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C6A225172C3C827100E5D99F /* LaunchScreen.storyboard */ = {
+		C6ED1C622C3E1B5A00510BFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C6A225182C3C827100E5D99F /* Base */,
+				C6ED1C632C3E1B5A00510BFB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -378,7 +234,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C6A2251B2C3C827100E5D99F /* Debug */ = {
+		C6ED1C662C3E1B5A00510BFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -441,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		C6A2251C2C3C827100E5D99F /* Release */ = {
+		C6ED1C672C3E1B5A00510BFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -497,14 +353,16 @@
 			};
 			name = Release;
 		};
-		C6A2251E2C3C827100E5D99F /* Debug */ = {
+		C6ED1C692C3E1B5A00510BFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A444001B973779754D31374A /* Pods-Conexa-Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4J738273Z4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Conexa-Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -525,18 +383,20 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C6A2251F2C3C827100E5D99F /* Release */ = {
+		C6ED1C6A2C3E1B5A00510BFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95ECE7762ACD0FED1DBD986 /* Pods-Conexa-Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4J738273Z4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Conexa-Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -557,77 +417,32 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		C6A225362C3C8A1A00E5D99F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4J738273Z4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Otto.Conexa-ChallengeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conexa-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Conexa-Challenge";
-			};
-			name = Debug;
-		};
-		C6A225372C3C8A1A00E5D99F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4J738273Z4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Otto.Conexa-ChallengeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conexa-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Conexa-Challenge";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C6A225042C3C827100E5D99F /* Build configuration list for PBXProject "Conexa-Challenge" */ = {
+		C6ED1C4F2C3E1B5A00510BFB /* Build configuration list for PBXProject "Conexa-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6A2251B2C3C827100E5D99F /* Debug */,
-				C6A2251C2C3C827100E5D99F /* Release */,
+				C6ED1C662C3E1B5A00510BFB /* Debug */,
+				C6ED1C672C3E1B5A00510BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6A2251D2C3C827100E5D99F /* Build configuration list for PBXNativeTarget "Conexa-Challenge" */ = {
+		C6ED1C682C3E1B5A00510BFB /* Build configuration list for PBXNativeTarget "Conexa-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6A2251E2C3C827100E5D99F /* Debug */,
-				C6A2251F2C3C827100E5D99F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C6A225352C3C8A1A00E5D99F /* Build configuration list for PBXNativeTarget "Conexa-ChallengeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6A225362C3C8A1A00E5D99F /* Debug */,
-				C6A225372C3C8A1A00E5D99F /* Release */,
+				C6ED1C692C3E1B5A00510BFB /* Debug */,
+				C6ED1C6A2C3E1B5A00510BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C6A225012C3C827100E5D99F /* Project object */;
+	rootObject = C6ED1C4C2C3E1B5A00510BFB /* Project object */;
 }
