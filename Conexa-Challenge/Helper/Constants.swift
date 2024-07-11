@@ -7,11 +7,13 @@
 
 import Foundation
 
+// MARK: Constants Enum
 enum Constants {
-    enum Home: String {
-        case title = "Conexa"
-        case subTitle = "Challenge"
-        case contentText = """
+    enum Home {
+        
+        static let title = "Conexa"
+        static let subTitle = "Challenge"
+        static let contentText = """
                         La aplicación debe constar de 4 pantallas:
                         
                         - Lista y buscador de noticias por título o contenido (Pantalla de Inicio)

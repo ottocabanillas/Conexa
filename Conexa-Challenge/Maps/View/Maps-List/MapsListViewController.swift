@@ -14,9 +14,9 @@ final class MapsListViewController: UIViewController {
     // MARK: - Variables
     private var selectedName: String?
     private var userData: [UserData] = [
-        UserData(id: nil, firstName: "Otto", lastName: "Cabanillas", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil),
-        UserData(id: nil, firstName: "Fernanda", lastName: "Leiva", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil),
-        UserData(id: nil, firstName: "Lucy", lastName: "Cabanillas", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil)
+        UserData(id: nil, firstname: "Otto", lastname: "Cabanillas", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil),
+        UserData(id: nil, firstname: "Fernanda", lastname: "Leiva", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil),
+        UserData(id: nil, firstname: "Lucy", lastname: "Cabanillas", email: nil, birthDate: nil, address: Address(street: nil, suite: nil, city: nil, zipcode: nil, geo: Geo(lat: "", lng: "")), phone: nil, website: nil)
     ]
 
     override func viewDidLoad() {
@@ -32,7 +32,8 @@ extension MapsListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         self.selectedName = "UserData: \(indexPath.row + 1)"
-        self.performSegue(withIdentifier: "MapsDetails", sender: nil)
+        let vc = MapsDetailsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -45,7 +46,7 @@ extension MapsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "userData_cell", for: indexPath)
         let userData: UserData = self.userData[indexPath.row]
-        cell.textLabel?.text = userData.firstName?.appending(" ").appending(userData.lastName!)
+        cell.textLabel?.text = userData.firstname?.appending(" ").appending(userData.lastname!)
         cell.accessoryType = .disclosureIndicator
         return cell
     }

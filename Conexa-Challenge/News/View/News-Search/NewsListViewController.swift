@@ -8,47 +8,79 @@
 import UIKit
 
 // MARK: NewsListViewController Class
-class NewsListViewController: UIViewController {
+final class NewsListViewController: UIViewController {
     
     // MARK: - IBOutlet
-    @IBOutlet weak var searchBarNews: UISearchBar!
+    @IBOutlet weak var searchBarNews: UISearchBar! {
+        didSet{
+            searchBarNews.placeholder = "Search News"
+        }
+    }
     @IBOutlet weak var segmentedControlNews: UISegmentedControl!
-    @IBOutlet weak var tableViewNews: UITableView!
+    @IBOutlet weak var tableViewNews: UITableView! {
+        didSet {
+            tableViewNews.register(UITableViewCell.self, forCellReuseIdentifier: "newsData_cell")
+        }
+    }
     
     // MARK: - Variables
-    private var selectedName: String?
-    private var posts: [NewsData] = [
-        NewsData(id: nil, slug: nil, url: nil, title: "Titulo 1", content: "Content 1", image: nil, thumbnail: nil, status: nil, category: "Category 1", publishedAt: "04/02/2023 13:25:21", updatedAt: nil, userID: nil),
-        NewsData(id: nil, slug: nil, url: nil, title: "Titulo 2", content: "Content 2", image: nil, thumbnail: nil, status: nil, category: "Category 2", publishedAt: "25/12/2022 13:10:07", updatedAt: nil, userID: nil),
-        NewsData(id: nil, slug: nil, url: nil, title: "Titulo 3", content: "Content 3", image: nil, thumbnail: nil, status: nil, category: "Category 3", publishedAt: "06/02/2023 10:19:53", updatedAt: nil, userID: nil)
-    ]
-    
+    private var viewModel = NewsListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableViewNews.register(UITableViewCell.self, forCellReuseIdentifier: "newsData_cell")
+        bindViewModel()
+        viewModel.requestData()
+        viewModel.filterNews()
+    }
+    
+    // MARK: - Methods
+    private func bindViewModel() {
+        viewModel.onViewModelsUpdated = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableViewNews.reloadData()
+            }
+        }
+    }
+    
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        if let filterType = FilterType(rawValue: sender.selectedSegmentIndex) {
+            viewModel.filterType = filterType
+            self.tableViewNews.reloadData()
+        }
+    }
+    
+}
+
+// MARK: - NewsListViewController Extension
+extension NewsListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.searchText = searchText
+        self.tableViewNews.reloadData()
     }
 }
 
 extension NewsListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        self.selectedName = "NewsData: \(indexPath.row + 1)"
-        self.performSegue(withIdentifier: "NewsDetails", sender: nil)
+        let detailViewModel = NewsDetailsViewModel(news: viewModel.filteredNews[indexPath.row])
+        let vc = NewsDetailsViewController()
+        vc.viewModel = detailViewModel
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension NewsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return viewModel.filteredNews.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "newsData_cell", for: indexPath)
-        let newsData: NewsData = self.posts[indexPath.row]
-        cell.textLabel?.text = newsData.title
+        if viewModel.filterType == .title {
+            cell.textLabel?.text = self.viewModel.filteredNews[indexPath.row].title
+        } else {
+            cell.textLabel?.text = self.viewModel.filteredNews[indexPath.row].contentText
+        }
         cell.accessoryType = .disclosureIndicator
         return cell
     }

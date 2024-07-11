@@ -25,19 +25,19 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fao-RA-85n" userLabel="Title">
-                            <rect key="frame" x="16" y="40" width="361" height="21"/>
+                            <rect key="frame" x="16" y="30" width="361" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpG-zw-CWZ" userLabel="Content">
-                            <rect key="frame" x="16" y="718.66666666666663" width="361" height="20.333333333333371"/>
+                            <rect key="frame" x="16" y="142" width="361" height="20.333333333333343"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkq-CE-EUW" userLabel="SubTitle">
-                            <rect key="frame" x="16" y="161" width="361" height="21"/>
+                            <rect key="frame" x="16" y="81" width="361" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -46,13 +46,13 @@
                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                     <constraints>
                         <constraint firstItem="mkq-CE-EUW" firstAttribute="leading" secondItem="cGh-y6-8Sz" secondAttribute="leading" constant="16" id="CFL-q6-j2p"/>
-                        <constraint firstItem="mkq-CE-EUW" firstAttribute="top" secondItem="fao-RA-85n" secondAttribute="bottom" constant="100" id="MWl-N3-m17"/>
+                        <constraint firstItem="mkq-CE-EUW" firstAttribute="top" secondItem="fao-RA-85n" secondAttribute="bottom" constant="30" id="MWl-N3-m17"/>
                         <constraint firstAttribute="trailing" secondItem="mkq-CE-EUW" secondAttribute="trailing" constant="16" id="N8D-zs-ZZ8"/>
                         <constraint firstItem="zpG-zw-CWZ" firstAttribute="leading" secondItem="cGh-y6-8Sz" secondAttribute="leading" constant="16" id="OPc-0q-u1E"/>
-                        <constraint firstAttribute="bottom" secondItem="zpG-zw-CWZ" secondAttribute="bottom" constant="20" id="Oqr-wW-hby"/>
                         <constraint firstItem="mkq-CE-EUW" firstAttribute="centerX" secondItem="cGh-y6-8Sz" secondAttribute="centerX" id="RdT-uL-4b8"/>
                         <constraint firstItem="fao-RA-85n" firstAttribute="centerX" secondItem="cGh-y6-8Sz" secondAttribute="centerX" id="TaU-5P-5ao"/>
-                        <constraint firstItem="fao-RA-85n" firstAttribute="top" secondItem="cGh-y6-8Sz" secondAttribute="top" constant="40" id="WEj-H5-tte"/>
+                        <constraint firstItem="fao-RA-85n" firstAttribute="top" secondItem="cGh-y6-8Sz" secondAttribute="top" constant="30" id="WEj-H5-tte"/>
+                        <constraint firstItem="zpG-zw-CWZ" firstAttribute="top" secondItem="mkq-CE-EUW" secondAttribute="bottom" constant="40" id="hQR-Ii-EXc"/>
                         <constraint firstItem="fao-RA-85n" firstAttribute="leading" secondItem="cGh-y6-8Sz" secondAttribute="leading" constant="16" id="miu-At-Iie"/>
                         <constraint firstAttribute="trailing" secondItem="zpG-zw-CWZ" secondAttribute="trailing" constant="16" id="ugc-Oq-OK9"/>
                         <constraint firstAttribute="trailing" secondItem="fao-RA-85n" secondAttribute="trailing" constant="16" id="w0v-LT-biY"/>
@@ -76,7 +76,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

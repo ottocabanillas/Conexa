@@ -27,6 +27,9 @@
                         <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-IZ-RL6">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="UD9-f9-KIx"/>
+                            </connections>
                         </searchBar>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Yq-a03">
                             <rect key="frame" x="0.0" y="56" width="393" height="32"/>
@@ -34,6 +37,9 @@
                                 <segment title="Title"/>
                                 <segment title="Content"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentChanged:" destination="-1" eventType="valueChanged" id="gft-XW-C8g"/>
+                            </connections>
                         </segmentedControl>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CqC-vT-H2Q">
                             <rect key="frame" x="0.0" y="87" width="393" height="672"/>

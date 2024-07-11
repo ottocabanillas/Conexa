@@ -7,29 +7,45 @@
 
 import UIKit
 
-class NewsDetailsViewController: UIViewController {
-
-
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var publishedAtLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
+// MARK: NewsDetailsViewController Class
+final class NewsDetailsViewController: UIViewController {
+    
+    // MARK: - IBOulet
+    @IBOutlet weak var categoryLabel: UILabel! {
+        didSet {
+            categoryLabel.text = viewModel?.news.category
+            categoryLabel.font = UIFont.boldSystemFont(ofSize: 50)
+            categoryLabel.adjustsFontSizeToFitWidth = true
+        }
+    }
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.text = viewModel?.news.title
+            titleLabel.font = UIFont.boldSystemFont(ofSize: 28)
+            titleLabel.numberOfLines = 0
+            contentLabel.textAlignment = .justified
+            titleLabel.adjustsFontSizeToFitWidth = true
+        }
+    }
+    @IBOutlet weak var publishedAtLabel: UILabel! {
+        didSet {
+            publishedAtLabel.text = viewModel?.news.publishedAt
+            publishedAtLabel.font = .systemFont(ofSize: 15)
+            publishedAtLabel.adjustsFontSizeToFitWidth = true
+        }
+    }
+    @IBOutlet weak var contentLabel: UILabel! {
+        didSet {
+            contentLabel.text = viewModel?.news.contentText
+            contentLabel.adjustsFontSizeToFitWidth = true
+        }
+    }
+    
+    // MARK: - Variables
+    var viewModel: NewsDetailsViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

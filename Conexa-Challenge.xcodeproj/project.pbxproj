@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B5391C6799759F2925D704B2 /* Pods_Conexa_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */; };
+		C6399BD52C40641B00A9B859 /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BD42C40641B00A9B859 /* NewsDetailsViewModel.swift */; };
+		C6418C742C40566400B91531 /* FilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6418C732C40566400B91531 /* FilterType.swift */; };
 		C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */; };
 		C6ED1C5A2C3E1B5A00510BFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */; };
 		C6ED1C5C2C3E1B5A00510BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C5B2C3E1B5A00510BFB /* ViewController.swift */; };
@@ -27,12 +29,20 @@
 		C6ED1C8F2C3E213900510BFB /* MapsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ED1C8D2C3E213900510BFB /* MapsDetailsViewController.xib */; };
 		C6F1406F2C3ED4B700FD1083 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1406E2C3ED4B700FD1083 /* TabBarController.swift */; };
 		C6F140712C3EECEA00FD1083 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F140702C3EECEA00FD1083 /* Constants.swift */; };
+		C6F140732C3F1FBE00FD1083 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F140722C3F1FBE00FD1083 /* APIService.swift */; };
+		C6F140792C3F3DE000FD1083 /* TabBarItemEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F140782C3F3DE000FD1083 /* TabBarItemEnum.swift */; };
+		C6F1407B2C3F454E00FD1083 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1407A2C3F454E00FD1083 /* RequestModel.swift */; };
+		C6F1407F2C3F45B900FD1083 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1407E2C3F45B900FD1083 /* NetworkError.swift */; };
+		C6F140812C3F4F7500FD1083 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F140802C3F4F7500FD1083 /* NewsListViewModel.swift */; };
+		C6F140832C3F4F8700FD1083 /* NewsArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F140822C3F4F8700FD1083 /* NewsArrayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conexa_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A444001B973779754D31374A /* Pods-Conexa-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conexa-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		B95ECE7762ACD0FED1DBD986 /* Pods-Conexa-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conexa-Challenge.release.xcconfig"; path = "Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		C6399BD42C40641B00A9B859 /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
+		C6418C732C40566400B91531 /* FilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterType.swift; sourceTree = "<group>"; };
 		C6ED1C542C3E1B5A00510BFB /* Conexa-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conexa-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +64,12 @@
 		C6ED1C8D2C3E213900510BFB /* MapsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsDetailsViewController.xib; sourceTree = "<group>"; };
 		C6F1406E2C3ED4B700FD1083 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C6F140702C3EECEA00FD1083 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6F140722C3F1FBE00FD1083 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C6F140782C3F3DE000FD1083 /* TabBarItemEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemEnum.swift; sourceTree = "<group>"; };
+		C6F1407A2C3F454E00FD1083 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		C6F1407E2C3F45B900FD1083 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C6F140802C3F4F7500FD1083 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		C6F140822C3F4F8700FD1083 /* NewsArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArrayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +122,14 @@
 		C6ED1C562C3E1B5A00510BFB /* Conexa-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				C6ED1C6E2C3E1FA300510BFB /* NetworkLayer */,
+				C6F140762C3F3DAE00FD1083 /* Helper */,
+				C6ED1C6E2C3E1FA300510BFB /* APIService */,
 				C6ED1C6D2C3E1F9800510BFB /* Maps */,
 				C6ED1C6C2C3E1F8600510BFB /* Home */,
 				C6ED1C6B2C3E1F7500510BFB /* News */,
 				C6F1406D2C3ED35800FD1083 /* Supporting */,
 				C6ED1C5B2C3E1B5A00510BFB /* ViewController.swift */,
 				C6ED1C652C3E1B5A00510BFB /* Info.plist */,
-				C6F1406E2C3ED4B700FD1083 /* TabBarController.swift */,
 			);
 			path = "Conexa-Challenge";
 			sourceTree = "<group>";
@@ -121,8 +137,9 @@
 		C6ED1C6B2C3E1F7500510BFB /* News */ = {
 			isa = PBXGroup;
 			children = (
-				C6ED1C7B2C3E20AC00510BFB /* View */,
 				C6ED1C7A2C3E20A800510BFB /* Model */,
+				C6ED1C7B2C3E20AC00510BFB /* View */,
+				C6F140742C3F35B500FD1083 /* ViewModel */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -140,15 +157,19 @@
 			children = (
 				C6ED1C722C3E205800510BFB /* Model */,
 				C6ED1C702C3E202600510BFB /* View */,
+				C6F140752C3F35CE00FD1083 /* ViewModel */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
 		};
-		C6ED1C6E2C3E1FA300510BFB /* NetworkLayer */ = {
+		C6ED1C6E2C3E1FA300510BFB /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				C6F140722C3F1FBE00FD1083 /* APIService.swift */,
+				C6F1407A2C3F454E00FD1083 /* RequestModel.swift */,
+				C6F1407E2C3F45B900FD1083 /* NetworkError.swift */,
 			);
-			path = NetworkLayer;
+			path = APIService;
 			sourceTree = "<group>";
 		};
 		C6ED1C6F2C3E201C00510BFB /* Maps-List */ = {
@@ -237,9 +258,44 @@
 				C6ED1C592C3E1B5A00510BFB /* SceneDelegate.swift */,
 				C6ED1C602C3E1B5A00510BFB /* Assets.xcassets */,
 				C6ED1C622C3E1B5A00510BFB /* LaunchScreen.storyboard */,
-				C6F140702C3EECEA00FD1083 /* Constants.swift */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C6F140742C3F35B500FD1083 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6F140802C3F4F7500FD1083 /* NewsListViewModel.swift */,
+				C6F140822C3F4F8700FD1083 /* NewsArrayViewModel.swift */,
+				C6399BD42C40641B00A9B859 /* NewsDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6F140752C3F35CE00FD1083 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6F140762C3F3DAE00FD1083 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C6F140702C3EECEA00FD1083 /* Constants.swift */,
+				C6F1406E2C3ED4B700FD1083 /* TabBarController.swift */,
+				C6F140772C3F3DB900FD1083 /* Enums */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C6F140772C3F3DB900FD1083 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C6F140782C3F3DE000FD1083 /* TabBarItemEnum.swift */,
+				C6418C732C40566400B91531 /* FilterType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,18 +417,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F1407F2C3F45B900FD1083 /* NetworkError.swift in Sources */,
 				C6ED1C8E2C3E213900510BFB /* MapsDetailsViewController.swift in Sources */,
 				C6ED1C772C3E209600510BFB /* HomeViewController.swift in Sources */,
 				C6F1406F2C3ED4B700FD1083 /* TabBarController.swift in Sources */,
 				C6ED1C822C3E20EE00510BFB /* NewsDetailsViewController.swift in Sources */,
 				C6ED1C5C2C3E1B5A00510BFB /* ViewController.swift in Sources */,
+				C6F1407B2C3F454E00FD1083 /* RequestModel.swift in Sources */,
+				C6399BD52C40641B00A9B859 /* NewsDetailsViewModel.swift in Sources */,
 				C6ED1C8A2C3E212000510BFB /* MapsListViewController.swift in Sources */,
 				C6ED1C7D2C3E20C000510BFB /* NewsData.swift in Sources */,
 				C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */,
 				C6ED1C742C3E207E00510BFB /* UserData.swift in Sources */,
+				C6F140832C3F4F8700FD1083 /* NewsArrayViewModel.swift in Sources */,
+				C6F140812C3F4F7500FD1083 /* NewsListViewModel.swift in Sources */,
+				C6F140732C3F1FBE00FD1083 /* APIService.swift in Sources */,
 				C6ED1C5A2C3E1B5A00510BFB /* SceneDelegate.swift in Sources */,
+				C6F140792C3F3DE000FD1083 /* TabBarItemEnum.swift in Sources */,
 				C6ED1C862C3E210000510BFB /* NewsListViewController.swift in Sources */,
 				C6F140712C3EECEA00FD1083 /* Constants.swift in Sources */,
+				C6418C742C40566400B91531 /* FilterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

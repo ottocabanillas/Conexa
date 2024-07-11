@@ -9,7 +9,7 @@ import Foundation
 
 struct UserData: Codable {
     let id: Int?
-    let firstName, lastName, email, birthDate: String?
+    let firstname, lastname, email, birthDate: String?
     let address: Address
     let phone, website: String?
 }

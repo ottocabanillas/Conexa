@@ -31,4 +31,3 @@ class ViewController: UIViewController {
         marker.map = mapView
   }
 }
-
