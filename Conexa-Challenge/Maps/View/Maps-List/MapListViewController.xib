@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapsListViewController" customModule="Conexa_Challenge" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapListViewController" customModule="Conexa_Challenge" customModuleProvider="target">
             <connections>
                 <outlet property="tableViewUser" destination="SKh-NY-ICf" id="8Nu-ht-5QK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="XM9-tu-LVv"/>

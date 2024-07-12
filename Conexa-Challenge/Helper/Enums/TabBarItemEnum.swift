@@ -40,7 +40,7 @@ enum TabBarItemsEnum: CaseIterable {
         case .home:
             return HomeViewController()
         case .maps:
-            return MapsListViewController()
+            return MapListViewController()
         case .news:
             return NewsListViewController()
         }
