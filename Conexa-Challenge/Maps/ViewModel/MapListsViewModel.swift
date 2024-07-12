@@ -11,7 +11,7 @@ final class MapListsViewModel {
     
     // MARK: - Variables
     private let apiService = APIService()
-    private(set) var viewModels: [MapDataViewnModel] = [] {
+    private(set) var viewModels: [MapDataViewModel] = [] {
         didSet {
             self.onViewModelsUpdated?()
         }
@@ -24,8 +24,10 @@ final class MapListsViewModel {
         Task(priority: .utility) {
             let usersData = try await apiService.getUserData()
             self.viewModels = usersData.map {
-                MapDataViewnModel(userData: $0)
+                MapDataViewModel(userData: $0)
             }
+            self.viewModels = viewModels.sorted { $0.lastname < $1.lastname }
         }
+        
     }
 }

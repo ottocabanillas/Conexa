@@ -1,5 +1,5 @@
 //
-//  MapDataViewnModel.swift
+//  MapDataViewModel.swift
 //  Conexa-Challenge
 //
 //  Created by Oscar A. Rafael Cabanillas on 11/07/2024.
@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: MapDataViewnModel Class
-final class MapDataViewnModel {
+final class MapDataViewModel {
     
     // MARK: - Variables
     private(set) var firstname: String
@@ -18,7 +18,7 @@ final class MapDataViewnModel {
     private(set) var lng: String
     
     var fullName: String {
-        return firstname + " " + lastname
+        return  lastname + " " + firstname
     }
     var coordination: String {
         return ("Latitud: \(lat) - longitude: \(lng)")

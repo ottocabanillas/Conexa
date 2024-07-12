@@ -55,7 +55,7 @@ extension MapListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "userData_cell", for: indexPath)
-        cell.textLabel?.text = viewModel.viewModels[indexPath.row].lastname
+        cell.textLabel?.text = viewModel.viewModels[indexPath.row].fullName
         cell.accessoryType = .disclosureIndicator
         return cell
     }

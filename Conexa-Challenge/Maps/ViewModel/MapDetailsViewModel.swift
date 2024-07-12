@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: MapDetailsViewModel Class
 final class MapDetailsViewModel {
-    let userInfo: MapDataViewnModel
+    let userInfo: MapDataViewModel
     
-    init(userInfo: MapDataViewnModel) {
+    init(userInfo: MapDataViewModel) {
         self.userInfo = userInfo
     }
 }

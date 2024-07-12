@@ -10,7 +10,7 @@
 		B5391C6799759F2925D704B2 /* Pods_Conexa_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21CABE66D8F8735D791F5A /* Pods_Conexa_Challenge.framework */; };
 		C6399BD52C40641B00A9B859 /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BD42C40641B00A9B859 /* NewsDetailsViewModel.swift */; };
 		C6399BD72C40748900A9B859 /* MapListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BD62C40748900A9B859 /* MapListsViewModel.swift */; };
-		C6399BD92C4074A800A9B859 /* MapDataViewnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BD82C4074A800A9B859 /* MapDataViewnModel.swift */; };
+		C6399BD92C4074A800A9B859 /* MapDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BD82C4074A800A9B859 /* MapDataViewModel.swift */; };
 		C6399BDB2C4074C600A9B859 /* MapDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6399BDA2C4074C600A9B859 /* MapDetailsViewModel.swift */; };
 		C6418C742C40566400B91531 /* FilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6418C732C40566400B91531 /* FilterType.swift */; };
 		C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED1C572C3E1B5A00510BFB /* AppDelegate.swift */; };
@@ -46,7 +46,7 @@
 		B95ECE7762ACD0FED1DBD986 /* Pods-Conexa-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conexa-Challenge.release.xcconfig"; path = "Target Support Files/Pods-Conexa-Challenge/Pods-Conexa-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		C6399BD42C40641B00A9B859 /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
 		C6399BD62C40748900A9B859 /* MapListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListsViewModel.swift; sourceTree = "<group>"; };
-		C6399BD82C4074A800A9B859 /* MapDataViewnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataViewnModel.swift; sourceTree = "<group>"; };
+		C6399BD82C4074A800A9B859 /* MapDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataViewModel.swift; sourceTree = "<group>"; };
 		C6399BDA2C4074C600A9B859 /* MapDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailsViewModel.swift; sourceTree = "<group>"; };
 		C6418C732C40566400B91531 /* FilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterType.swift; sourceTree = "<group>"; };
 		C6ED1C542C3E1B5A00510BFB /* Conexa-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conexa-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				C6399BD62C40748900A9B859 /* MapListsViewModel.swift */,
-				C6399BD82C4074A800A9B859 /* MapDataViewnModel.swift */,
+				C6399BD82C4074A800A9B859 /* MapDataViewModel.swift */,
 				C6399BDA2C4074C600A9B859 /* MapDetailsViewModel.swift */,
 			);
 			path = ViewModel;
@@ -439,7 +439,7 @@
 				C6ED1C7D2C3E20C000510BFB /* NewsData.swift in Sources */,
 				C6ED1C582C3E1B5A00510BFB /* AppDelegate.swift in Sources */,
 				C6ED1C742C3E207E00510BFB /* UserData.swift in Sources */,
-				C6399BD92C4074A800A9B859 /* MapDataViewnModel.swift in Sources */,
+				C6399BD92C4074A800A9B859 /* MapDataViewModel.swift in Sources */,
 				C6F140832C3F4F8700FD1083 /* NewsArrayViewModel.swift in Sources */,
 				C6F140812C3F4F7500FD1083 /* NewsListViewModel.swift in Sources */,
 				C6F140732C3F1FBE00FD1083 /* APIService.swift in Sources */,
