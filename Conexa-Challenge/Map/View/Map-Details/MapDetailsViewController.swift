@@ -10,7 +10,7 @@ import GoogleMaps
 
 // MARK: MapDetailsViewController Class
 final class MapDetailsViewController: UIViewController {
-
+    
     // MARK: - IBOutlet
     @IBOutlet weak var mapView: UIView! {
         didSet{
@@ -29,7 +29,7 @@ final class MapDetailsViewController: UIViewController {
     }
     @IBOutlet weak var latAndLngLabel: UILabel! {
         didSet{
-            latAndLngLabel.text = detailViewModel?.userInfo.coordination
+            latAndLngLabel.text = detailViewModel?.userInfo.coordinates
         }
     }
     
@@ -39,7 +39,7 @@ final class MapDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-  }
+    }
     
     // MARK: - Methods
     func setupMap() {
@@ -51,10 +51,10 @@ final class MapDetailsViewController: UIViewController {
             let options = GMSMapViewOptions()
             options.camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 6.0)
             options.frame = self.mapView.bounds
-
+            
             let mapViewGoogle = GMSMapView(options: options)
             self.mapView.addSubview(mapViewGoogle)
-
+            
             // Creates a marker in the center of the map.
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)

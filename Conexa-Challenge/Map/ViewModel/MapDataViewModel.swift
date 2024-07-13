@@ -20,7 +20,7 @@ final class MapDataViewModel {
     var fullName: String {
         return  lastname + " " + firstname
     }
-    var coordination: String {
+    var coordinates: String {
         return ("Latitud: \(lat) - longitude: \(lng)")
     }
     var latDouble: Double {

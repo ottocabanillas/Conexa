@@ -32,16 +32,4 @@ final class HomeViewController: UIViewController {
             contentLabel.adjustsFontSizeToFitWidth = true
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let provider = APIService()
-        
-        Task {
-            let newsData =  try await provider.getNewsData()
-            newsData.forEach { data in
-                print(data.title)
-            }
-        }
-    }
 }

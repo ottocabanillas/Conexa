@@ -7,8 +7,13 @@
 
 import Foundation
 
+protocol APIServiceProtocol {
+    func getUserData() async throws -> [UserData]
+    func getNewsData() async throws -> [NewsData]
+}
+
 // MARK: APIService Class
-final class APIService {
+final class APIService: APIServiceProtocol {
     
     // MARK: - Methods
     func getUserData() async throws -> [UserData] {

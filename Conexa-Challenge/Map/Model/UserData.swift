@@ -8,10 +8,10 @@
 import Foundation
 
 struct UserData: Codable {
-    let id: Int?
+    let id: Int
     let firstname, lastname, email, birthDate: String
     let address: Address
-    let phone, website: String?
+    let phone, website: String
 }
 
 // MARK: - Address
@@ -24,5 +24,3 @@ struct Address: Codable {
 struct Geo: Codable {
     let lat, lng: String
 }
-
-// https://jsonplaceholder.org/users

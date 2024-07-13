@@ -21,7 +21,7 @@ struct RequestModel  {
         case users = "/users"
         
         var baseURL: String {
-            return "https://jsonplaceholder.org/".appending(self.rawValue)
+            return "https://jsonplaceholder.org".appending(self.rawValue)
         }
     }
 }

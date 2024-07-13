@@ -11,13 +11,13 @@ import Foundation
 final class NewsListViewModel {
     
     // MARK: - Variables
-    private let apiService = APIService()
-    private(set) var viewModels: [NewsArrayViewModel] = [] {
+    private let apiService: APIServiceProtocol
+    private(set) var viewModels: [NewsDataViewModel] = [] {
         didSet {
             self.onViewModelsUpdated?()
         }
     }
-    private(set) var filteredNews: [NewsArrayViewModel] = []
+    private(set) var filteredNews: [NewsDataViewModel] = []
     
     var filterType: FilterType = .title {
         didSet {
@@ -31,12 +31,23 @@ final class NewsListViewModel {
     }
     var onViewModelsUpdated: (() -> Void)?
     
+    // MARK: - Initialization
+    init(apiService: APIServiceProtocol = APIService()) {
+        self.apiService = apiService
+    }
+    
     // MARK: - Methods
     func requestData() {
         Task(priority: .utility) {
-            let newsData = try await apiService.getNewsData()
-            self.viewModels = newsData.map {
-                NewsArrayViewModel(newsData: $0)
+            do {
+                let newsData = try await apiService.getNewsData()
+                self.viewModels = newsData.map {
+                    NewsDataViewModel(newsData: $0)
+                }
+            } catch {
+                // Handle error
+                print("Error fetching news data: \(error)")
+                // You might want to handle errors in a real app
             }
         }
     }

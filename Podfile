@@ -6,5 +6,9 @@ use_frameworks!
 
 target 'Conexa-Challenge' do
   pod 'GoogleMaps', '8.4.0'
+  
+  target 'Conexa-ChallengeTests' do
+        
+    end
 
 end

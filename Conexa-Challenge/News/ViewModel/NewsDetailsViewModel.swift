@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: NewsDetailsViewModel Class
 final class NewsDetailsViewModel {
-    let news: NewsArrayViewModel
+    let news: NewsDataViewModel
     
-    init(news: NewsArrayViewModel) {
+    init(news: NewsDataViewModel) {
         self.news = news
     }
 }
